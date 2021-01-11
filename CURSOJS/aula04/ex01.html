@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            /*comentario em CSS*/
+            background-color: rgb(86, 43, 167);
+        }
+        
+        h1 {
+            color: rgb(204, 202, 66)
+        }
+    </style>
+</head>
+
+<body>
+    <!--Comentario em html-->
+    <h1>Olá Web!</h1>
+    <script>
+        alert('Aprendendo JavaScript!') //comentario JS 
+        confirm('Pronto para começar?')
+        var nome = window.prompt('Qual é o seu nome?')
+        alert('É um grande prazer em te conhecer, ' + nome + '!')
+        var n1 = window.prompt(nome + ' digite um numero!') // O comando "Pronpt" ira converter os dados de entrada em String
+        var n2 = window.prompt('Digite outro numero, ' + nome)
+        var resul = n1 + n2
+        alert('O resultado da conta é : ' + resul)
+        alert(n1 + '+' + n2 + ' não é o resultado esperado, porque a entrada do tipo dos numeros eram STRINGS ')
+        alert('Vamos pegar novamento os numeros. só que dessa vez iremos converter em numeros Inteiros! ')
+        var n11 = parseInt(prompt('Digite um novo numero ')) // parseInt(x) serve para converter entradas de numeros para numero inteiro. parseFloat(x) para converter em Flot
+        var n22 = parseInt(prompt('Digite mais um numero '))
+        var novo_resul = n11 + n22
+        alert('O resultado de ' + n11 + ' + ' + n22 + ' = ' + novo_resul)
+    </script>
+</body>
+
+</html>
