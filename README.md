@@ -1,2 +1,5 @@
-# CursoEmVideoJavaScript
- JavaScript e ECMAScript para Iniciantes. 
+ Repositorio dos meus estudos ao Curso de JavaScript de **Gustavo Guanabara**
+https://www.cursoemvideo.com/
+
+
+
