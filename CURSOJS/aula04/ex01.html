@@ -32,10 +32,21 @@
         alert('O resultado da conta é : ' + resul)
         alert(n1 + '+' + n2 + ' não é o resultado esperado, porque a entrada do tipo dos numeros eram STRINGS ')
         alert('Vamos pegar novamento os numeros. só que dessa vez iremos converter em numeros Inteiros! ')
-        var n11 = parseInt(prompt('Digite um novo numero ')) // parseInt(x) serve para converter entradas de numeros para numero inteiro. parseFloat(x) para converter em Flot
-        var n22 = parseInt(prompt('Digite mais um numero '))
+            // O Number(x) converte as entradas para numeros automaticamente flot ou int. 
+            //parseInt(x) serve para converter entradas de numeros para numero inteiro. 
+            //parseFloat(x) para converter em Flot
+            // String(x) Converte x em String
+        var n11 = Number(prompt('Digite um novo numero '))
+        var n22 = Number(prompt('Digite mais um numero '))
         var novo_resul = n11 + n22
-        alert('O resultado de ' + n11 + ' + ' + n22 + ' = ' + novo_resul)
+        alert('O resultado é ' + novo_resul)
+            // templete streng = `${variavel}`
+        alert(`Ou sejá! O resultado de ${n11}"+"${n22} é igual a ${novo_resul}`)
+
+        // Informações de Formatação de Strings
+        //variavel.length = quantos caracteres a string tem
+        //variavel.toUpperCase() = tudo para MAIÚSCULA.
+        //variavel.tpLowerCase() = tudo para minusculas.
     </script>
 </body>
 
