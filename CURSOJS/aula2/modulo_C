@@ -23,8 +23,14 @@ MODULO C: DOM
                 Selecionando elementos
 
                     (Por marca)
-                getElementsbyTagName()
+                 getElementsbyTagName()
                       (por ID)
-                   getElementById()
+                 getElementById()
+                      (por nome)
+                 getElementsByName()
                     (Por Classe)
+                getElementsByClassName()
                     (por Seletor)
+                     {forma nova}
+                   queruSelector()
+                  querySelectorAll()

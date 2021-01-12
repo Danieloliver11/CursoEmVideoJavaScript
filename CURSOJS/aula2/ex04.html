@@ -18,13 +18,29 @@
     <h1>Primeiros passos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div id='diva'>
+        <p>fazendo manibulações de DOM com getElementById</p>
+    </div>
+    <div id='ndiva'>
+        <p>fazendo manibulações de DOM com querySelector() com ID!</p>
+    </div>
+    <div class='cldiva'>
+        <p>fazendo manibulações de DOM com querySelector() com CLASS!</p>
+    </div>
     <p>[CLICK AQUI]</p>
     <script>
-        var ta = window.document.getElementsByTagName('p')[0] // getElementsByTagName pega o nome da TAG requisitado ('p') sendo o [0] esta requerindo o primeiro "p" da area body
+        var ta = window.document.getElementsByTagName('p')[0] // getElementsByTagName pega o nome da TAG requisitado ('p') sendo o [0] quando temos mais de um objeto e o Elements ESTIVER EM PLURAL assim requer o primeiro "p" da area body
         window.document.write(ta.innerText) // innerText pega o texto que esta dentro da variavel "ta"!
-        ta.style.color = "blue" // aqui vai mudar acor da variavel "ta"
+        ta.style.color = "blue " // aqui vai mudar acor da variavel "ta"
         var fundo = document.body
-        fundo.style.background = 'black' // muda o background para preto atravez da variavel "fundo"!
+        fundo.style.background = 'grey ' // muda o background para preto atravez da variavel "fundo"!
+        var divi = document.getElementById('diva')
+        divi.style.background = 'pink' //manipula  o background pelo 'id' do elemento!
+            //getElementsByName() E getElementsByClassName() É o mesmo principio que o getElementById!
+        var nome = document.querySelector('div#ndiva') // querySelector Um metodo mais pratico que os get element!
+        nome.style.color = 'blueviolet'
+        var classe = document.querySelector('div.cldiva')
+        classe.style.background = 'crimson'
     </script>
 
 </body>
