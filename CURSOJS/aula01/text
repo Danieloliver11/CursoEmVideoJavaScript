@@ -28,6 +28,17 @@ voce utiliza string>
 e para minusculas utilizar .toLowerCase()>
 -->
 
+OPERADORES LOGICOS
+
+! NEGAÇÃO (no)
+&& CONJUNÇÃO (and)
+|| DISJUNÇÃO (or)
+
+tERNÁRIO 
+
+teste ? true : false
+media >= 7.0 ? "aprovado : "reprovado"
+
 <!-- 
             TIPOS PRIMITIVOS
     number
@@ -41,66 +52,3 @@ e para minusculas utilizar .toLowerCase()>
         Array
     function
 -->
-
-   
-<!--no head, fica a cabeça do meu site, toda a config dele-->
- <head>
-    <meta charset="UTF-8">
-    <meta name="Aula dois" content="itens da minha segunda aula de js">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Segunda aula de JS </title>
-
-<!--No style, eu chamo o CSS e mudo o estilo do meu site-->
-<style>
-/* Esta é uma maneira de comentar dentro do CSS */
-        body{
-            font-family: sans-serif;
-            font: normal ;
-            background-color: rgb(170, 169, 170);
-            }
-
-        h1 {
-            color: rgb(255, 255, 20);
-                  }
-</style>
-
-</head>
-
-
-<body>
-<!--Dentro do body, é onde fiaca o conteudo do meu site, inclusive os scripts-->    
- 
-        <h1>Ola Mundo</h1>
-        <p> Ja me livrei da maldiçao</p>
-
-<script>
-    /*Todo script tem que estar dentro da chave de script*/
-
-            //Esse comentario so funciona dentro da chave de script
-
-            //O alert, serve para criar um alerta na pagina
-            //alert('Olá Mundo!')
-
-            //O confirm, cria um alerta com a opçao de ok ou cancelar
-            //confirm('Esta gostando do Curso?')
-            
-            //O prompt cria um alerta com intereçao 
-           
-        var n1 = Number (prompt('Digite um numero: '))
-        var n2 = Number (prompt('Digite outro numero: '))
-        var s  = n1 + n2
-        alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
-
-            /* Para chamar uma variavel ou utilizar algum sinal apos o texto
-               dentro de uma frase, eu tenho que utilizar o sinal de + 
-               que no JS significa CONCATENAÇÃO ou ADIÇAO
-            */
-
-            /* Pra converter uma string para number posso utilizar o Number apos o =
-            ou o contrario ou n.toString() para fazer o numero ser string */
-            
-
-            /* Utilizar o metodo abaixo para nao precisar concatenar
-            O aluno ${nome da variave} com ${nome da variave} anos,
-            tirou  a nota ${nome da variave} no curso de JS` (utilizar craze)
-            */
