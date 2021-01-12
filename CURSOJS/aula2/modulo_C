@@ -5,3 +5,26 @@ MODULO C: DOM
 * Árvore DOM 
 
 * Manipulando DOM 
+
+        Exemplo Árvore DOM dentro do Javascript
+
+                    [window]
+                  /     |    \ 
+        [location] [document] [history]
+                        |
+                     [html]
+                    /      \
+            [head]             [body]
+             /  \             /   |  \
+        [meta] [title]    [h1]   [p]  [div]
+                                  |
+                              [strong]
+
+                Selecionando elementos
+
+                    (Por marca)
+                getElementsbyTagName()
+                      (por ID)
+                   getElementById()
+                    (Por Classe)
+                    (por Seletor)
