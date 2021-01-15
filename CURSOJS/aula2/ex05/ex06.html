@@ -18,13 +18,11 @@
     </div>
     <script>
         function soma() {
-            var tn1 = document.createElement("in1")
-            var tn2 = document.createElement("in2")
+            var a = Number(document.getElementById("in1").value)
+            var b = Number(document.getElementById("in2").value)
             var resul = document.getElementById("resultado")
-            var aa = Number(tn1.value)
-            var bb = Number(tn2.value)
-            var r = aa + bb
-            resul.innerHTML = r
+            var r = a + b
+            var c = resul.innerHTML = `<h1>O resultado de ${a} + ${b} = ${r}<h1>`
 
 
         }
