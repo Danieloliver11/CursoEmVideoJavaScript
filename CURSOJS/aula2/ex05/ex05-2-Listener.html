@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funções</title>
+    <title>Listener</title>
     <style>
         div#evento {
             border: 2px solid black;
@@ -32,9 +32,9 @@
         //DISPARANDO POR Listener sem precisar poluir a div no HTML!
 
         var a = document.getElementById('evento')
-        addEventListener('mouseenter ', entro);
-        addEventListener('mouseout', saiu);
-        addEventListener('click ', clicou);
+        a.addEventListener('mouseenter', entro);
+        a.addEventListener('mouseout', saiu);
+        a.addEventListener('click', clicou);
 
 
 
