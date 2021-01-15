@@ -1,0 +1,61 @@
+<!--EVENTOS DE FUNÇÕES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        div#evento {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            line-height: 115px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='evento'>
+        <p>CLICAR</p>
+    </div>
+
+
+
+
+    <script>
+        //disparando por EVENTETLISTENER!
+        //DISPARANDO POR Listener sem precisar poluir a div no HTML!
+
+        var a = document.getElementById('evento')
+        addEventListener('mouseenter ', entro);
+        addEventListener('mouseout', saiu);
+        addEventListener('click ', clicou);
+
+
+
+        function entro() {
+
+            a.innerText = 'ENTRO2! '
+            a.style.backgroundColor = 'red '
+        }
+
+        function saiu() {
+            a.innerText = 'SAIU2! '
+            a.style.backgroundColor = 'gold '
+
+
+        }
+
+        function clicou() {
+            a.innerText = ' MOUSE CLICOU2! '
+            a.style.background = 'purple '
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!--EVENTOS DE FUNÇÕES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        div#evento {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            line-height: 115px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20%;
+        }
+        
+        div#evento2 {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            line-height: 115px;
+            text-align: center;
+            margin-top: -40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='evento' onmousemove='entro()' onmouseout='saiu() ' onclick=' clicou() '>
+        <p>CLICAR</p>
+    </div>
+
+
+
+
+    <script>
+        //disparando por HTML
+        var a = document.getElementById('evento')
+
+        function entro() {
+
+            a.innerText = 'ENTRO!'
+            a.style.backgroundColor = 'red'
+        }
+
+        function saiu() {
+            a.innerText = 'SAIU!'
+            a.style.backgroundColor = 'gold'
+
+
+        }
+
+        function clicou() {
+            a.innerText = ' MOUSE CLICOU! '
+            a.style.background = 'purple'
+        }
+    </script>
+</body>
+
+</html>
