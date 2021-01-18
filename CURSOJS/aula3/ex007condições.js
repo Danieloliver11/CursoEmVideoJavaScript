@@ -14,3 +14,16 @@ if (b != "Brasil") {
 } else {
     console.log("você é Brasileiro")
 }
+
+// condição aninhadas
+
+var idade = 120
+if (idade < 16) {
+    console.log("Você é menor de idade!Não pode votar.")
+} else {
+    if (idade < 18 || 65) {
+        console.log("Você pode escolher ir votar!")
+    } else {
+        console.log("Você é maior de idade. VOCÊ TEM QUE VOTAR!")
+    }
+}
