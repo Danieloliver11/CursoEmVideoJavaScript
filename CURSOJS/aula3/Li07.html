@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+
+    <style>
+        input#p {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="p"><strong>País:</strong></label><input type="text" name="np" id="p" maxlength="30" placeholder="Escreva o pais que você esta!">
+    <input type="button" name="nb" id="b" value="Submit" onclick="clicado()">
+    <div id="resul">
+    </div>
+    <script>
+        function clicado() {
+            var pais = document.getElementById("p").value
+            var resu = document.getElementById("resul")
+            resu.innerHTML = `Você é Brasileiro e o pais que você esta é ${pais} </br>`
+
+            if (pais.toUpperCase() == "BRASIL") {
+                resu.innerHTML += `Você esta no ${pais}e você é Brasileiro`
+            } else {
+                resu.innerHTML += `Você é estrangeiro no ${pais}`
+            }
+        }
+    </script>
+</body>
+
+</html>

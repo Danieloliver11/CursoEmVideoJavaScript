@@ -9,7 +9,7 @@
 
 
 <body>
-    <label for="km">Velocidade</label><input type="number" name="nkm" id="km">
+    <label for="km">Velocidade</label><input type="number" name="nkm" id="km">Km
     <input type="button" name="nbu" id="bu" value="Verificar" onclick="clicado()">
 
     <div id="resu">
@@ -23,7 +23,7 @@
 
         function clicado() {
             var k = Number(kmm.value)
-            r.innerHTML = `<p>Sua velocidade é ${k} !</p>`
+            r.innerHTML = `<p>Sua velocidade é <strong>${k}</strong> !</p>`
             if (k > 60) {
                 r.innerHTML += `<p>Você passou do limite de velocidade! Você sera multado!</p>`
             } else {
