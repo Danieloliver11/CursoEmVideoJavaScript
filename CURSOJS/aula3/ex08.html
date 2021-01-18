@@ -17,16 +17,17 @@
         </p>
     </div>
     <script>
-        var km = document.getElementById("km")
+        var kmm = document.getElementById("km")
         var r = document.getElementById("resu")
 
-        var k = Number(km.value)
 
         function clicado() {
+            var k = Number(kmm.value)
+            r.innerHTML = `<p>Sua velocidade é ${k} !</p>`
             if (k > 60) {
-                r.innerHTML = `Você passou do limite de velocidade! Você sera multado!`
+                r.innerHTML += `<p>Você passou do limite de velocidade! Você sera multado!</p>`
             } else {
-                r.innerHTML = `Sua velocidade é ${k} e você não ultrapassou o limite !`
+                r.innerHTML += `Você não ultrapassou o limite !`
             }
         }
     </script>
