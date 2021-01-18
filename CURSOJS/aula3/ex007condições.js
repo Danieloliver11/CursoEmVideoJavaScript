@@ -27,3 +27,6 @@ if (idade < 16) {
         console.log("Você é maior de idade. VOCÊ TEM QUE VOTAR!")
     }
 }
+
+
+// E Condições multiplas
