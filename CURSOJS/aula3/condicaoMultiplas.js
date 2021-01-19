@@ -9,6 +9,7 @@ var dia = agora.getDay()
 4 = Quinta
 6 = Sexta 
 */
+// switch so funciona com numeros inteiros e strengs.
 switch (dia) {
     case 0:
         console.log("Domingo")
