@@ -7,6 +7,7 @@ header {
     width: 300px;
     margin: 0 auto 0 auto;
     text-align: center;
+    color: white;
 }
 
 section#secao {
@@ -18,7 +19,7 @@ section#secao {
     border-radius: 10px;
     border: 1px black;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
-    text-align: center
+    text-align: center;
 }
 
 div#imagem img {
@@ -30,4 +31,8 @@ div#imagem {}
 
 footer {
     text-align: center;
+    color: white;
 }
+
+
+/*----------------------------------sexo e idade-------------------------------*/
