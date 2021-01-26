@@ -36,3 +36,24 @@ footer {
 
 
 /*----------------------------------sexo e idade-------------------------------*/
+
+#foto {
+    border-radius: 50%;
+    margin: 15px;
+}
+
+#saida {
+    margin: 15px;
+}
+
+section#secaoo {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    margin: 8% auto 0 auto;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+    text-align: center;
+}
