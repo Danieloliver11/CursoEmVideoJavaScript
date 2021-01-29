@@ -1,0 +1,55 @@
+@charset "utf-8";
+body {
+    background-color: #6bc5d1c9;
+}
+
+header {
+    width: 300px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: white;
+}
+
+section#secao {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto 0 auto;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+#saida {
+    margin: 15px;
+}
+
+section#secaoo {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    margin: 8% auto 0 auto;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+    text-align: center;
+}
+
+#iresul {
+    margin-left: -180px;
+}
+
+#iresul {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 10pc;
+    margin: 0 auto;
+}
