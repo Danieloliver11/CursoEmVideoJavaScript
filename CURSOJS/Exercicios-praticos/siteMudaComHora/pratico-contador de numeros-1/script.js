@@ -3,12 +3,12 @@ function contar() {
     var fim = Number(document.getElementById('fim').value)
     var passo = Number(document.getElementById('passo').value)
     var res = document.getElementById('saida')
-    var pri = inicio
+
     var emoti = "&#128073"
     var bandeira = "&#127937"
 
     //verificação
-    if (inicio === 0 && fim === 0) {
+    if (inicio.leangth == 0 || fim.leangth == 0) {
         alert('[ERRO] Inicio e fim sem valor!')
     } else
     if (passo === 0) {
@@ -16,12 +16,15 @@ function contar() {
 
     }
     res.innerText = "Contando:"
-    res.innerHTML += `${emoti} ${pri}`
 
-    while (inicio < fim) {
+    if (inicio < fim) { //contagem crescente
+        for (var c = inicio; c <= fim; c = c + passo) {
 
-        inicio = inicio + passo
-        res.innerHTML += ` ${emoti} ${inicio} `
+            res.innerHTML += ` ${emoti} ${c} `
+        }
+    } else { //contagem regressiva
+        for (var c = inicio; c >= fim; c = c - passo)
+            res.innerHTML += ` ${emoti} ${c} `
     }
 
     res.innerHTML += bandeira

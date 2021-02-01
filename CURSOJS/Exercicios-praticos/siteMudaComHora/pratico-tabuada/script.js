@@ -3,6 +3,7 @@ function contar() {
     var res = document.getElementById('iresul')
     var contador = 0
     var resultado = 0
+    res.innerHTML = `A tabuada de ${numero} é:<br>`
 
     if (numero == 0) {
         alert('[ERRO] Um número devera ser digitado!')

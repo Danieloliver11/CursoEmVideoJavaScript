@@ -42,14 +42,3 @@ section#secaoo {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
     text-align: center;
 }
-
-#iresul {
-    margin-left: -180px;
-}
-
-#iresul {
-    border: 2px solid black;
-    border-radius: 5%;
-    width: 10pc;
-    margin: 0 auto;
-}
